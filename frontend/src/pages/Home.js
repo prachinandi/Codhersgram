@@ -22,7 +22,7 @@ const Home = () => {
             }}
           />
           <div className="profile__info">
-            <div className="profile__name">Hemant Bajaj</div>
+            <div className="profile__name">Hemi Bajaj</div>
             <div className="profile__position">Senior software developer</div>
           </div>
           <Button name="View Profile" src="/profile" />
