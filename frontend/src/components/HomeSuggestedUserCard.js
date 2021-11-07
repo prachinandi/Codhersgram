@@ -14,7 +14,7 @@ const HomeSuggestedUserCard = () => {
           backgroundImage: `url(${Profile})`,
         }}
       />
-      <div className="profile__user__suggestions__name">Hemant Bajaj</div>
+      <div className="profile__user__suggestions__name">Hemi Bajaj</div>
     </div>
   );
 };

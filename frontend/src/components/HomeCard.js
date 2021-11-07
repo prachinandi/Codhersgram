@@ -15,7 +15,7 @@ const HomeCard = () => {
             backgroundImage: `url(${Profile})`,
           }}
         />
-        <div className="profile__user__suggestions__name">Hemant Bajaj</div>
+        <div className="profile__user__suggestions__name">Hemi Bajaj</div>
       </div>
       <div className="home__feed__post__card__image">
         <img src={Profile} alt="" />
