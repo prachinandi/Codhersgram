@@ -14,7 +14,7 @@ Figma Link: [link](https://www.figma.com/proto/kOaqr8HMmjayHB02Ar9yEN/Cod(H)ergr
 
 # Aimed for- Girls Hoo Hackathon
 <p align="center">
-<img src="" width="670" height="200" >
+<img src="https://github.com/prachi237/Codhersgram/blob/master/assets/Screenshot%20(9).png" width="700" height="200" >
 </p>
 
 # Inspiration:
@@ -24,7 +24,7 @@ AGender bias is pervasive in STEM fields. Women who embark on careers in technol
 In my own college whenever there are any tech events, hardly there are 2-3 girls participating, hence we feel leftover and at times we are ignored. Now, what if we want to work with a girls-only team, want to share my problems, and want to get mentored by a girl senior sadly we can’t in such a case we have to either team up with boys or end up by not participating. Thus I and my team came up with a solution that can poise this ambiguity.  
 
 # The problem it solves:
- 
+It solves the major problems that women in STEM face which are as follows:
 * Less participation in events
 * Lack of workspace relationship
 * Lack of role models
@@ -57,10 +57,6 @@ we worked on the UI/UX, layout, CSS and design.
 using Node.js, Express and  MongoDB: The back-end build using MongoDB database on Google Cloud to store the details of profiles and integrated the backend APIs with the frontend pages.
 
 * Google Cloud Platform:
-
-
-<img src= "" width="350" height="290" >
-<img src="" width="350" height="290" >
  
 # Accomplishment:
 Each and every member of our team are passionate about women in STEM. We wanted to deploy an application that could benefit the underrepresented group. We started with the idea of building “codhersgram”, then we did the prototyping, and it is an amazing experience like how we could draft and design our imagination. Finally in the end we could deploy the web application with help of our technical knowledge. We are proud that could build an application for social good that has the potential to solve real-world issues (i.e problems that generally women in STEM face). 
