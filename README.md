@@ -32,11 +32,6 @@ In my own college whenever there are any tech events, hardly there are 2-3 girls
 * Problems of female education
 * Problems related to unemployment
 
-
-
-<img src= "" width="350" height="290" >
-<img src="" width="350" height="290" >
- 
 # How Codhersgram solves the problem?
 Women comprise 29% of the STEM workforce. Looking at such statistics and indifference, women may feel that it will be very difficult for them to compete in this tech industry. In fact, women are 22% more likely to experience “Imposter Syndrome” In the workplace(the overwhelming feeling of being out of place compared to colleagues)
 We want to bridge this gap thus we came up with a social media App named “Codhersgram” where women in STEM fields can connect to each other discuss projects, exchange ideas, share their problems, seek for collaboration to work on projects. “Codhersgram” has a feature of connection request where you can send friend requests to other fellow girls who are in the STEM fields, once they accept now you two are friends. Girls can now collaborate and form their own teams thus the issue of being leftover and ignored in a team of boys is now resolved. This will boost confidence in girls and they can fearlessly participate in various events and will feel comfortable in their workplace. Women of all ages and stripes will be able to network themselves through our web application. Thus we can find our women role models and inspirations. This will motivate other girls to work harder and reach the pinnacle of success. You seek mentorship from your role models by directly getting connected to them, and since women always stand for women she will definitely help you as she knows the barriers women generally faces.
