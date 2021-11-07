@@ -14,6 +14,8 @@ const typeDefs = gql`
     followersIDs: [String]
     projects: [Project]
     stories: [Story]
+    followers: [User]
+    followings: [User]
   }
   type Project {
     id: ID!
@@ -52,6 +54,7 @@ const typeDefs = gql`
       link: String
     ): Project
     addStory(userID: String!, imageURL: String!, link: String): Story
+    followUser(userID: String!, selfID: String!): User
   }
 `;
 
