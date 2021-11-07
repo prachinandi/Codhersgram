@@ -79,7 +79,7 @@ We want to add more functionality and flexibility to our web application. Integr
     <td align="center"><a href="https://github.com/abhibhaw"><img src="https://avatars.githubusercontent.com/u/39991296?v=4" width="100px;" alt=""/><br /><sub><b>Abhibhaw Asthana</b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/ORKO06"><img src="https://avatars.githubusercontent.com/u/74568847?v=4" width="100px;" alt=""/><br /><sub><b>Hemant Bajaj</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/prachi237"><img src="https://avatars.githubusercontent.com/u/72700861?v=4" width="100px;" alt=""/><br /><sub><b>Prachi Nandi</b></sub></a><br /></td>
- <td align="center"><a href=" https://github.com/sambit-sankalp"><img src="https://avatars.githubusercontent.com/u/72700861?v=4" width="100px;" alt=""/><br /><sub><b>sambit-sankalp</b></sub></a><br /></td>
+ <td align="center"><a href=" https://github.com/sambit-sankalp"><img src="![image](https://user-images.githubusercontent.com/72700861/140658355-012c75c7-5575-4a5b-b454-ba94f87629cc.png)" width="100px;" alt=""/><br /><sub><b>sambit-sankalp</b></sub></a><br /></td>
  
 
   </tr>
