@@ -21,6 +21,12 @@ const resolvers = {
     stories(parent) {
       return Story.find({ userID: parent.id }).exec();
     },
+    followers(parent) {
+      return User.find({ _id: { $in: parent.followersIDs } }).exec();
+    },
+    followings(parent) {
+      return User.find({ _id: { $in: parent.followingIDs } }).exec();
+    },
   },
   Mutation: {
     addUser: (_, args) => {
@@ -34,6 +40,20 @@ const resolvers = {
     addStory: (_, args) => {
       let story = new Story(args);
       return story.save();
+    },
+    followUser: async (_, args) => {
+      User.updateOne(
+        {
+          _id: args.userID,
+        },
+        { $push: { followersIDs: args.selfID } }
+      ).exec();
+      return User.updateOne(
+        {
+          _id: args.selfID,
+        },
+        { $push: { followingIDs: args.userID } }
+      ).exec();
     },
   },
 };
