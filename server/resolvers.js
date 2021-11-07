@@ -14,6 +14,14 @@ const resolvers = {
       return Story.find({});
     },
   },
+  User: {
+    projects(parent) {
+      return Project.find({ userID: parent.id }).exec();
+    },
+    stories(parent) {
+      return Story.find({ userID: parent.id }).exec();
+    },
+  },
   Mutation: {
     addUser: (_, args) => {
       let user = new User(args);
