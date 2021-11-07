@@ -1,0 +1,81 @@
+.home {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.home__right {
+  width: 100%;
+  background-color: #ffeaf2;
+}
+
+.profile__info {
+  margin-bottom: 10px;
+}
+
+.profile__user__suggestions {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__user__suggestions__card {
+  display: flex;
+  margin: 10px 0;
+}
+
+.profile__user__suggestions__name {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.home__stories {
+  display: flex;
+}
+
+.home__stories__image {
+  margin: 0 20px;
+}
+
+.home__feed__posts {
+  background-color: #ffeaf2;
+}
+.home__feed__post__card {
+  margin: 40px 40px;
+  background-color: white;
+  border-radius: 40px;
+}
+.home__feed__post__card__user {
+  margin: 0 20px;
+  display: flex;
+}
+
+.home__feed__post__card__image {
+  width: 400px;
+  max-height: 400px;
+  margin: auto;
+}
+
+.home__feed__post__card__image img {
+  width: 400px;
+  max-height: 400px;
+}
+
+.home__feed__post__card__description {
+  padding: 20px 40px;
+}
+
+.home__right h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  list-style: 45px;
+  margin: 20px 50px;
+}
+.profile__follow__button a {
+  text-decoration: none;
+  color: white;
+}
