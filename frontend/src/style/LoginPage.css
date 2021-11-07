@@ -1,0 +1,79 @@
+@import url(//db.onlinewebfonts.com/c/b1f909b1cb3adb801a92229ea92613e1?family=Script+MT+Bold);
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeaf2;
+}
+
+.login__card {
+  width: 80vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 750px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+  }
+}
+
+.login__card__image {
+  max-width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 8, 255, 0.2) 0%,
+    rgba(242, 17, 98, 0.2) 100%
+  );
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: auto auto;
+}
+
+.login__card__image img {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: fill;
+  border-radius: 50px;
+}
+
+.login__card__form {
+  margin: auto 0;
+  text-align: center;
+}
+
+.login__card__form h1 {
+  font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 250px;
+  height: 40px;
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+input[type="password"] {
+  margin: 20px 0;
+}
+input[type="text"] {
+  margin-top: 60px;
+}
+
+.btn {
+  width: 250px;
+  height: 40px;
+  background: linear-gradient(79.61deg, #f21162 -18.09%, #0d08ff 139.52%);
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
