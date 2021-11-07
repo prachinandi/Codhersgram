@@ -35,6 +35,7 @@ const typeDefs = gql`
     users: [User]
     projects: [Project]
     stories: [Story]
+    userByUID(uid: String!): User
   }
   type Mutation {
     addUser(

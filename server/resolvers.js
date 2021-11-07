@@ -13,6 +13,9 @@ const resolvers = {
     stories: async () => {
       return Story.find({});
     },
+    userByUID: (_, args) => {
+      return User.findOne({ uid: args.uid }).exec();
+    },
   },
   User: {
     projects(parent) {
