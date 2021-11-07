@@ -1,7 +1,8 @@
-import React from "react";
-import Profile from "../asset/profilePic.jpg";
-import Button from "../components/Button";
-import ProfilePostCard from "../components/ProfilePostCard";
+import React from 'react';
+import Profile from '../asset/profilePic.jpg';
+import Button from '../components/Button';
+import Login from '../components/Login';
+import ProfilePostCard from '../components/ProfilePostCard';
 
 const IndividualProfile = () => {
   return (
@@ -29,6 +30,7 @@ const IndividualProfile = () => {
               </div>
             </div>
             <Button name="Upload" src="/" />
+            <Login />
           </div>
         </div>
       </div>
