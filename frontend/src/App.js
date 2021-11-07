@@ -1,10 +1,13 @@
-import Login from "./components/Login";
+import Profile from "./pages/profile";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
-
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <Router>
+        <Profile />
+        <LoginPage />
+      </Router>
     </div>
   );
 }

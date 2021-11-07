@@ -1,8 +1,8 @@
 import React from "react";
 import Login from "../components/Login";
 import "../style/LoginPage.css";
-import image from "../assets/login__image.png";
-import GoogleImage from "../assets/google.png";
+import image from "../asset/login__image.png";
+import GoogleImage from "../asset/google.png";
 
 const LoginPage = () => {
   return (

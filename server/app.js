@@ -1,46 +1,32 @@
-const { ApolloServer, gql } = require("apollo-server");
+require("dotenv").config();
+const express = require("express");
+const { ApolloServer } = require("apollo-server-express");
+const mongoose = require("mongoose");
 
-const users = [
-  {
-    id: 1,
-    name: "Miss Briganja",
-    email: "miss@briganja.com",
-    bio: "I am talented",
-    avatar: "https://i.pravatar.cc/300?img=1",
-    url: "https://website.com",
-    github: "username",
-    followingIDs: ["5", "1"],
-    followersIDs: ["2", "9"],
-    projectsIDs: ["111", "222"],
-    storiesIDs: ["211", "311"],
-  },
-];
+const resolvers = require("./resolvers");
+const typeDefs = require("./typeDefs");
 
-const typeDefs = gql`
-  type User {
-    name: String
-    email: String
-    bio: String
-    avatar: String
-    url: String
-    github: String
-    followingIDs: [String]
-    followersIDs: [String]
-    projectsIDs: [String]
-    storiesIDs: [String]
-  }
-  type Query {
-    users: [User]
-  }
-`;
+async function startServer() {
+  const app = express();
+  const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
-const resolvers = {
-  Query: {
-    users: () => users,
-  },
-};
+  await apolloServer.start();
 
-const server = new ApolloServer({ typeDefs, resolvers });
-server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
+  apolloServer.applyMiddleware({ app });
+
+  app.use((req, res) => {
+    res.send("Hello from server!");
+  });
+
+  await mongoose.connect(process.env.DB_URL);
+
+  console.log("DB connected");
+
+  app.listen({ port: 4000 }, () =>
+    console.log(
+      `🚀 Server ready at http://localhost:4000${apolloServer.graphqlPath}`
+    )
+  );
+}
+
+startServer();
