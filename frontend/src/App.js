@@ -1,11 +1,20 @@
 import Profile from "./pages/profile";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './components/Home'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Profile/>
-    </Router>
+
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Profile />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </Router>
+
+
     </div>
   );
 }
