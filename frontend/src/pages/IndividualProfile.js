@@ -1,10 +1,9 @@
 import React from "react";
-import "../style/profile.css";
 import Profile from "../asset/profilePic.jpg";
-import ProfilePostCard from "../components/ProfilePostCard";
 import Button from "../components/Button";
+import ProfilePostCard from "../components/ProfilePostCard";
 
-function profiles() {
+const IndividualProfile = () => {
   return (
     <div className="profile-main">
       <h1 className="heading">Codhersgram</h1>
@@ -29,13 +28,14 @@ function profiles() {
                 <div>followers</div>
               </div>
             </div>
-            <Button name="Follow" src="/" />
+            <Button name="Upload" src="/" />
           </div>
         </div>
       </div>
 
       <div className="profile__post">
         <h2>Posts</h2>
+        <span></span>
 
         <div className="profile__post__card__container">
           <ProfilePostCard />
@@ -47,5 +47,6 @@ function profiles() {
       </div>
     </div>
   );
-}
-export default profiles;
+};
+
+export default IndividualProfile;

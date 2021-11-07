@@ -99,3 +99,8 @@
   margin: 5px;
   text-align: left;
 }
+
+.profile__post h2 {
+  margin: 20px;
+  font-size: 30px;
+}
