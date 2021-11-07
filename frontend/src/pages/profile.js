@@ -4,61 +4,95 @@ import Profile from "../asset/profilePic.jpg";
 import Project from "../asset/project.jpg";
 import { Link } from "react-router-dom";
 
-function profiles(){
-    return(
+function profiles() {
+  return (
+    <div className="profile-main">
+      <h1 className="heading">Codhersgram</h1>
+      <div className="profile">
+        <div
+          className="profile__image"
+          style={{ backgroundImage: `url(${Profile})` }}
+        ></div>
+        <div>
+          <div className="profile__info">
+            <div className="profile__name">Hemant Bajaj</div>
+            <div className="profile__position">Senior software developer</div>
+          </div>
+          <div className="profile__details">
+            <div className="profile__details__followers">
+              <div>
+                <div>890</div>
+                <div>followers</div>
+              </div>
+              <div>
+                <div>890</div>
+                <div>followers</div>
+              </div>
+            </div>
+            <div className="profile__follow__button">Follow</div>
+          </div>
+        </div>
+      </div>
 
-    <div className="Main"> 
-     <div className="profileMain">
-        
-         <div className="left">
-         <h1>Codhersgram</h1>   
-         <div className="pro" style={{ backgroundImage: `url(${Profile})`,} }> </div>
-         <div className="info">
-         <h2>Pratyusha</h2>
-         <h3>Senior SDE at Google <br/> </h3>
-         <h3>10k <br/><h4>Followers</h4></h3>
-         </div>
-        <Link to="/">
-          <button> Follow </button>
-        </Link>
-        <Link to="/">
-          <button> Chat </button>
-        </Link>
-         
-         </div>
-         <div className="Right">
-             <h1>Projects</h1>
-             <div className="items">
-                 <div className="columns">
-                  <div claaName="rows">
-                     <div className="card">   
-                     <img className="cardImg" src={Project} alt="projects"  />
-                     Have a look on the project
-                     </div>   
-                     </div>
-                 </div>
-
-                 <div claaName="rows">
-                     <div className="card">   
-                     <img className="cardImg" src={Project} alt="projects"  />
-                     Have a look on the project
-                     </div>   
-                     </div>
-                 
-
-                 <div claaName="rows">
-                     <div className="card">   
-                     <img className="cardImg" src={Project} alt="projects"  />
-                     Have a look on the project
-                     </div>   
-                     </div>
-                 
-                 <div className="columns"></div>
-             </div>
-         </div>
-         
-     </div>
-     </div>   
-    );
+      <div className="profile__post">
+        <div className="profile__post__card__container">
+          <div className="profile__post__card">
+            <div className="profile__post__image">
+              <img src={Profile} alt="" srcset="" />
+            </div>
+            <div className="profile__post__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ex
+              sit quisqua Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div className="profile__post__card">
+            <div className="profile__post__image">
+              <img src={Profile} alt="" srcset="" />
+            </div>
+            <div className="profile__post__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ex
+              sit quisqua Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div className="profile__post__card">
+            <div className="profile__post__image">
+              <img src={Profile} alt="" srcset="" />
+            </div>
+            <div className="profile__post__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ex
+              sit quisqua Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div className="profile__post__card">
+            <div className="profile__post__image">
+              <img src={Profile} alt="" srcset="" />
+            </div>
+            <div className="profile__post__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ex
+              sit quisqua Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div className="profile__post__card">
+            <div className="profile__post__image">
+              <img src={Profile} alt="" srcset="" />
+            </div>
+            <div className="profile__post__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ex
+              sit quisqua Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div className="profile__post__card">
+            <div className="profile__post__image">
+              <img src={Profile} alt="" srcset="" />
+            </div>
+            <div className="profile__post__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ex
+              sit quisqua Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 export default profiles;

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { firebase } from "../config/firebase";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = ({ image }) => {
   const [user, setUser] = useState("");
   const [login, setLogin] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     user ? setLogin(true) : setLogin(false);
@@ -17,6 +19,9 @@ const Login = ({ image }) => {
       .then((result) => {
         setUser(result.user);
         console.log(result.user);
+      })
+      .then(() => {
+        navigate("/profile");
       })
       .catch((err) => {
         console.log(err);
