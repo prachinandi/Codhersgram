@@ -13,6 +13,7 @@ const typeDefs = gql`
     followingIDs: [String]
     followersIDs: [String]
     projects: [Project]
+    stories: [Story]
   }
   type Project {
     id: ID!
